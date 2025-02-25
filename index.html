@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0.5; url=home.html"> <!-- Auto-redirect after 3 seconds -->
+    <title>Redirecting...</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bars {
+            width: 150px;  /* Increased the width */
+            height: 120px; /* Increased the height */
+            --c: linear-gradient(#efab3d 0 0);
+            background: var(--c) 0% 50%,
+                        var(--c) 50% 50%,
+                        var(--c) 100% 50%;
+            background-size: 30px 100%; /* Increased background size */
+            background-repeat: no-repeat;
+            animation: bars-t0lx83md 1s infinite linear;
+            margin: 0 auto;
+        }
+
+        @keyframes bars-t0lx83md {
+            33% {
+                background-size: 30px 20%, 30px 100%, 30px 100%; /* Increased the size of the bar */
+            }
+
+            50% {
+                background-size: 30px 100%, 30px 20%, 30px 100%; /* Increased the size of the bar */
+            }
+
+            66% {
+                background-size: 30px 100%, 30px 100%, 30px 20%; /* Increased the size of the bar */
+            }
+        }
+        
+        /* Center the div vertically and horizontally using flex */
+        .centered-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .text-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="centered-content">
+        <!-- Container for the bars and the text -->
+        <div class="container">
+            <!-- Div for the bars animation -->
+            <div class="bars mb-4"></div>
+            <!-- Text and Link -->
+            <p class="text-link">If you're not redirected, <a href="claxhome.html">click here</a></p>
+        </div>
+    </div>
+
+    <!-- Optional Bootstrap JS and dependencies for future enhancements -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
